@@ -298,9 +298,6 @@ Font　
 
 /*TopPage
 --------------------------------------------------------------------*/
-#top .header { height: 340px; position: relative; background-position: 75% top; }
-#top .header__ci { top: 85px; z-index: 1; font-size: 6.8rem; opacity: 0; }
-#top .header__ci .adjust { margin-right: 42px; }
 #top .header__parent-ci { top: 90px; z-index: 1; }
 #top .header__parent-ci img { height: auto; }
 #top .header__tagline { z-index: 1; }
@@ -316,6 +313,36 @@ Font　
 .contact-table .download { width: 20%; vertical-align: middle; }
 .contact-table .download a { display: block; }
 .contact-table .download a[target="_blank"] { position: relative; }
+
+/* header
+--------------------------------------------------------------------*/
+#top .header { height: 340px; position: relative; background: url("../images/bg-header.png") no-repeat 20% top fixed #eef2f5; }
+
+#top .header__inner { width: 970px; margin: 0 auto; position: relative; background-image : url("/Users/takeda/workspace/private/WebPage/HIS/common/images/bg-header.png")}
+
+#top .header__ci { 
+    top: 80px; 
+    left: -4px; 
+    position: absolute; 
+    z-index: 10; 
+    font-family: "Montserrat"; 
+    font-size: 50px; 
+    line-height: 1.1; 
+    color: #122d3b; 
+}
+
+#top .header__parent-ci { 
+    top: 60px; 
+    right: 0px; 
+    position: absolute; 
+    z-index: auto; 
+}
+#top .header__parent-ci img { width: auto; height: 54px; display: block; }
+#top .header__tagline { width: 100%; height: 65px; bottom: 0px; left: 0px; position: absolute; z-index: auto; background: #fff; border-bottom: 5px double black; }
+#top .header__tagline img { width: auto; height: 30px; display: block; }
+#top .header__tagline .inner { width: 970px; display: block; margin: 21px auto 0; }
+
+
 .contact-table .download a[target="_blank"]:after { content: ""; font-family: 'icomoon' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-decoration: none !important; display: inline-block; margin: -3px 6px 0 8px; color: #0ba29a; font-size: 69%; }
 .contact-table .download a[href$='.pdf'], .contact-table .download a[href$='.doc'], .contact-table .download a[href$='.docx'], .contact-table .download a[href$='.ppt'], .contact-table .download a[href$='.xls'], .contact-table .download a[href$='.xlsx'] { position: relative; }
 .contact-table .download a[href$='.pdf']:after, .contact-table .download a[href$='.doc']:after, .contact-table .download a[href$='.docx']:after, .contact-table .download a[href$='.ppt']:after, .contact-table .download a[href$='.xls']:after, .contact-table .download a[href$='.xlsx']:after { content: " "; width: 23px; height: 14px; min-width: 15px; min-height: 15px; display: inline-block; margin: -3px 6px 0 8px; vertical-align: middle; background-repeat: no-repeat; background-position: left 1px; background-size: contain; }
